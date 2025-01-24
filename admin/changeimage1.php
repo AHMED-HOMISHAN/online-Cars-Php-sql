@@ -5,7 +5,7 @@
 	if(!isset($_COOKIE['maxwheelsu']))
 
 	{	
-		header('location:https://localhost/online-Cars-Php-sql-main');
+		header('location:http://localhost:1234/cars/');
 	}
 	else{
 		if(isset($_POST['update']))

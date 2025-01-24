@@ -57,7 +57,7 @@
             if(isset($_COOKIE['maxwheelsu'])){
             $auth["user"] =json_decode($_COOKIE['maxwheelsu'],true);
                 if($auth["user"]["User_type"] == '0' || $auth["user"]["User_type"] == '1'){
-                header("location:https://localhost/online-Cars-Php-sql-main/admin");
+                header("location:http://localhost:1234/cars/admin/");
                 }
                 if(isset($auth["user"])){
                 $user = $auth['user']['UserName'];

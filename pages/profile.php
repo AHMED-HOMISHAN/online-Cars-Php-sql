@@ -269,7 +269,7 @@ if(empty($newpassword_err)&&empty($email_err)&&empty($password_err)){
 							?>
 								<li>
 									<div class="vehicle_img">
-										<a href="car-details.php?id=<?php echo htmlentities($result->vid);?>"><img style="width: 22rem;" src="../image/vehicleimages/<?php echo htmlentities($result->Vimage1);?>" alt="image"></a>
+										<a href="car-details.php?id=<?php echo htmlentities($result->vid);?>"><img src="../image/vehicleimages/<?php echo htmlentities($result->Vimage1);?>" alt="image"></a>
 									</div>
 									<div class="vehicle_title">
 										<h6><a href="car-details.php?id=<?php echo htmlentities($result->vid);?>"> <?php echo htmlentities($result->name);?> , <?php echo htmlentities($result->Vtitle);?></a></h6>
@@ -306,7 +306,7 @@ if(empty($newpassword_err)&&empty($email_err)&&empty($password_err)){
 }
 }
 }else{
-	header("location:https://localhost/online-Cars-Php-sql-main");
+	header("location:http://localhost:1234/cars/");
 }
 
  include("../includes/footer.php");

@@ -11,5 +11,5 @@ if(isset($_COOKIE['maxwheelsu'])){
 }
     session_unset();
     session_destroy(); // destroy session
-    header("location:http://localhost/online-Cars-Php-sql-main/index.php");
+    header("location:http://localhost:1234/cars/index.php");
 ?>

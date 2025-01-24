@@ -26,11 +26,11 @@ if(isset($_POST['login'])){
             if($user->Activity == '1'){  
                 if($user->User_type =='0' || $user->User_type == '1'){
                     $_SESSION['user'] = $user;
-                    header("location:https://localhost/online-Cars-Php-sql-main/admin/index.php");
+                    header("location:http://localhost:1234/cars/admin/index.php");
 
                 }else{
                     $_SESSION['user'] = $user; 
-                    header("location:https://localhost/online-Cars-Php-sql-main");
+                    header("location:http://localhost:1234/cars/index.php");
                 }
             
             setcookie( "maxwheelsu",json_encode($_SESSION['user']), time() + (86400 * 2),"/");
